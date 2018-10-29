@@ -90,6 +90,7 @@ code/build.eclipse/
 # IntelliJ IDE
 .idea/
 out/
+pcgen.iml
 pcgendev.iml
 
 # pmd
