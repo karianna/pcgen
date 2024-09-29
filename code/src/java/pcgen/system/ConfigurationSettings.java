@@ -164,7 +164,8 @@ public final class ConfigurationSettings extends PropertyContext
 	private static String expandRelativePath(String path)
 	{
 		// TODO: a dirty hack for Mac bundles only
-		if (SystemUtils.USER_DIR.endsWith("MacOS") && path.startsWith("@")) {
+		if (SystemUtils.USER_DIR.endsWith("MacOS") && path.startsWith("@"))
+		{
 			path = SystemUtils.USER_DIR + File.separator + ".." + File.separator + "app" + File.separator + path.substring(1);
 		}
 
