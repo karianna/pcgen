@@ -168,8 +168,7 @@ public final class ConfigurationSettings extends PropertyContext
 		{
 			path = SystemUtils.USER_DIR + File.separator + ".." + File.separator + "app" + File.separator + path.substring(1);
 		}
-
-		if (path.startsWith("@"))
+		else if (path.startsWith("@"))
 		{
 			path = SystemUtils.USER_DIR + File.separator + path.substring(1);
 		}
